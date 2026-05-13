@@ -1,6 +1,6 @@
 const symbols = [
-    "images/banana.webp",
-    "images/bell.png",
+    "images/jbe_logo.png",
+    "images/bts_logo.png",
     "images/jpg logo.png",
 ];
 
@@ -12,7 +12,7 @@ const reel = document.querySelectorAll(".machine");
 const spinBtn = document.getElementById("start_game");
 
 let alwaysLose = true;
-let winChance = 0.25;
+let winChance = 0.10;
 
 
 spinBtn.addEventListener("click", spin);
@@ -20,7 +20,7 @@ spinBtn.addEventListener("click", spin);
 function spin() {
 
     spinBtn.disabled = true;
-
+        
         let final1;
         let final2;
         let final3;
@@ -71,7 +71,7 @@ function spin() {
         reel3.src = final3;
 
         spinBtn.disabled = false;
-    }, 2000);
+    }, 4000);
 }
 
 function randomSymbol() {
